@@ -15,12 +15,11 @@ const CandidatesTable: FC<CandidatesTableProps> = (props) => {
             await props.onAddCandidate(inputRef.current.value);
             setIsAddButtonClicked(false);
         }
-
-        return Promise.reject();
+        await Promise.reject();
     }, [props]);
 
     return (
-        <table className="w-1/2 text-center">
+        <table className="w-1/2 text-center table-auto">
             <caption>Candidates</caption>
             <thead>
                 <tr>

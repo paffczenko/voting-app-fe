@@ -16,10 +16,10 @@ const VotersTable: FC<VotersTableProps> = (props) => {
             setIsAddButtonClicked(false);
         }
 
-        return Promise.reject();
+        await Promise.reject();
     }, [props]);
     
-    return (<table className="text-center w-full">
+    return (<table className="table-auto text-center w-full">
         <caption>
             Voters
         </caption>
