@@ -21,7 +21,7 @@ const Vote:FC<VoteProps> = (props) => {
                 <option value="" disabled selected>I vote for</option>
                 {props.candidates?.map(x => <option key={x.id} value={x.id}>{x.name}</option>)}
             </select>
-            <button disabled={!selectedVoter || !selectedCandidate} type="button" onClick={() => {
+            <button className="border rounded p-1" disabled={!selectedVoter || !selectedCandidate} type="button" onClick={() => {
                 if(selectedCandidate && selectedVoter) {
                     void props.onSubmit(selectedCandidate, selectedVoter);
                 }

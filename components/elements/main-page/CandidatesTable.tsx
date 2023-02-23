@@ -19,7 +19,7 @@ const CandidatesTable: FC<CandidatesTableProps> = (props) => {
     }, [props]);
 
     return (
-        <table className="w-1/2 text-center table-auto">
+        <table className="w-full text-center table-auto">
             <caption>Candidates</caption>
             <thead>
                 <tr>

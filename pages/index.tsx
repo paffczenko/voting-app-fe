@@ -30,13 +30,9 @@ const IndexPage = () => {
             <div className="max-w-screen-lg mx-auto mt-10">
                 <div className="flex space-x-10 w-full flex flex-col">
                     <p>Voting app</p>
-                    <div className="w-full flex space-x-10">
-                        <div className="w-1/2">
-                            <VotersTable items={voters} onAddVoter={handleAddVoter} />
-                        </div>
-                        <div className="w-1/2">
-                            <CandidatesTable items={candidates} onAddCandidate={handleAddCandidate} />
-                        </div>
+                    <div className="w-full grid grid-cols-2 gap-2">
+                        <VotersTable items={voters} onAddVoter={handleAddVoter} />
+                        <CandidatesTable items={candidates} onAddCandidate={handleAddCandidate} />
                     </div>
                 </div>
                 <div className="w-full mt-20">
